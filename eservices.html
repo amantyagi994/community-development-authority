@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-services</title>
+</head>
+<body>
+    <main class="app eservices-app">
+        <section class="eservices-sidebar">
+            <div class="logo-wrapper">
+                <img src="./assets/images/logo.png" alt="Community Development Authority logo">
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/dash.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">Dashboard</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/list.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">E-Services</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/User.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">My Application</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/credit-card.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">Payment History</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/id-card.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">My Card</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/Setting.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">Settings</span>
+                </div>
+                <div class="sidebar-menu--item">
+                    <img src="./assets/images/Logout.png" alt="" class="sidebar-menu--item-icon">
+                    <span class="sidebar-menu--item-text">Logout</span>
+                </div>
+            </div>
+        </section>
+        <section class="eservices-content">
+            <div class="top-card">
+                <div class="top-card--dropdown">
+                    <select name="status" id="">
+                        <!-- <option value="public" selected disabled>Select</option> -->
+                        <option value="public">Public</option>
+                        <option value="public">Private</option>
+                    </select>
+                </div>
+                <div class="user-data">
+                    <div class="language-switcher-wrapper">
+                        <select name="languageswitcher" id="languageswitcher">
+                            <!-- <option value="عربي">عربي</option> -->
+                            <option value="عربي"><img src="./assets/images/language.png" alt="" /></option>
+                            <option value="english">English</option>
+                        </select>
+                    </div>
+                    <div class="globe-icon-wrapper">
+                        <img src="./assets/images/Icon-language.png" alt="">
+                    </div>
+                    <div class="notification">
+                        <div class="notification-icon-wrapper">
+                            <img src="./assets/images/bell.png" alt="">
+                            <div class="notification-indicator">2</div>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <div class="user-name">Muhhamed</div>
+                        <div class="user-profile-picture-wrapper"><img src="./assets/images/User.png" alt="user profile" class="user-profile-picture"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-head-wrapper">
+
+                <h2 class="section-head">
+                    E-Services
+                </h2>
+                <div class="tools-wrapper">
+                    <div class="table-layout-switcher-wrapper">
+                        <button id="list-layout" class="table-layout-switcher">
+                            <img src="./assets/images/dash.png" alt="">
+                        </button>
+                        <button id="dash-layout" class="table-layout-switcher">
+                            <img src="./assets/images/dash.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
