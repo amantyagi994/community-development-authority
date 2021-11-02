@@ -18,8 +18,8 @@
 .btn-register-type-container .btn-reg-type {
 	background: var(--grey50);
 	min-width: 16rem;
-	margin: 0.5rem 0;
-	padding: 0.75rem;
+	margin: 0.3rem 0;
+	padding: 0.5rem 0.75rem;
 	justify-content: space-between;
 	border-radius: 0.25rem;
 }
