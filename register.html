@@ -1,112 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main id="app" class="app">
-        <section class="section-left">
-            <div class="logo-container">
-                <img src="./assets/images/logo.png" alt="">
-            </div>
-            <div class="form-container">
-                <div class="form-header">
-                    <h2>LOGIN</h2>
-                </div>
-                <form action="" class="form register-form" method="POST">
-                    <div class="input-container">
-                        <label for="firstname" class="label label-f-name">First Name</label>
-                        <input type="text" id="firstname" name="firstname" class="input f-name" placeholder="Ex. Mohamed">
-                    </div>
-                    <div class="input-container">
-                        <label for="lastname" class="label label-l-name">Last Name</label>
-                        <input type="text" id="lastname" name="lastname" class="input l-name" placeholder="Ali">
-                    </div>
-                                    <div class="input-container">
-                                        <label for="dob" class="label label-dob">DOB</label>
-                                        <input type="date" id="dob" name="dob" class="input dob">
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="gender" class="label label-gender">Gender</label>
-                                        <select name="gender" id="gender">
-                                            <optgroup>
-                                                <option value="none" disabled selected>select</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="nationality" class="label label-nationality">Nationality</label>
-                                        <input type="text" id="nationality" name="nationality" class="input nationality">
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="emirate" class="label label-emirate">Emirate</label>
-                                        <input type="text" id="emirate" name="emirate" class="input emirate">
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="mobile" class="label label-mobile">Mobile Number</label>
-                                        <input type="text" id="mobile" name="mobile" class="input mobile">
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="phone" class="label label-phone">Phone Number</label>
-                                        <input type="text" id="phone" name="phone" class="input phone">
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="pobox" class="label label-pobox">P.O. Box</label>
-                                        <input type="text" id="pobox" name="pobox" class="input pobox">
-                                    </div>
-                                    
-                                    <div class="input-container">
-                                        <label for="education" class="label label-education">Education Level</label>
-                                        <select name="education" id="education">
-                                                <optgroup>
-                                                    <option value="none" disabled selected>select education</option>
-                                                    <option value="bachelor">Bachelor's</option>
-                                                    <option value="master">Master's</option>
-                                                    <option value="Other">Other</option>
-                                                </optgroup>
-                                            </select>
-                                    </div>
-                                        <div class="input-container">
-                                            <label for="password" class="label label-password">Password</label>
-                                            <input type="text" id="password" name="password" class="input password">
-                                        </div>
-                                        <div class="input-container">
-                                            <label for="confirmpassword" class="label label-confirm-password">Confirm Password</label>
-                                            <input type="text" id="confirmpassword" name="confirmpassword" class="input confirm-password">
-                                        </div>
-                                        
-                                        <div class="input-container">
-                                            <label for="contactway" class="label label-contact-way">Way of Contact</label>
-                                            <input type="text" id="contactway" name="contactway" class="input contact-way">
-                                        </div>
-                                        <div class="input-container radio-container">
-                                            <label for="ifemployee" class="label label-ifemployee">Employee</label>
-                                            <input type="radio" id="ifemployee" name="ifemployee" class="input ifemployee" value="true">
-                                            <input type="radio" id="ifemployee" name="ifemployee" class="input ifemployee" value="false">
-                                        </div>
-                                        <div class="input-container">
-                                            <label for="userphotoupload" class="label label-user-photo-upload">Personal Photo (Optional)</label>
-                                            <input type="file" id="userphotoupload" name="userphotoupload" class="input user-photo-upload" placeholder="Upload">
-                                        </div>
-                
-                                        <div class="input-container">
-                                            <button class="btn-text">PREVIOUS</button>
-                                            <button type="submit" class="btn-submit">SUBMIT</button>
-                                        </div>
-                
-                </form>
-            </div>
-        </section>
-        <section class="section-right">
-            <img src="./assets/images/login.png" alt="">
-        </section>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Register</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="">
+		<main id="app" class="app">
+			<section class="section-left">
+				<div class="section-left-inner-wrapper flex flex-horizontal-center">
+					<div class="logo-container">
+						<img src="./assets/images/logo.png" alt="" />
+					</div>
+					<div class="form-container">
+						<div class="form-header">
+							<h2>LOGIN</h2>
+						</div>
+						<form action="" class="form register-form" method="POST">
+							<div class="input-container">
+								<label for="firstname" class="label label-f-name"
+									>First Name</label
+								>
+								<input
+									type="text"
+									id="firstname"
+									name="firstname"
+									class="input f-name"
+									placeholder="Ex. Mohamed"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="lastname" class="label label-l-name"
+									>Last Name</label
+								>
+								<input
+									type="text"
+									id="lastname"
+									name="lastname"
+									class="input l-name"
+									placeholder="Ali"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="dob" class="label label-dob">DOB</label>
+								<input type="date" id="dob" name="dob" class="input dob" />
+							</div>
+							<div class="input-container">
+								<label for="gender" class="label label-gender">Gender</label>
+								<select name="gender" id="gender">
+									<optgroup>
+										<option value="none" disabled selected>select</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+										<option value="Other">Other</option>
+									</optgroup>
+								</select>
+							</div>
+							<div class="input-container">
+								<label for="nationality" class="label label-nationality"
+									>Nationality</label
+								>
+								<input
+									type="text"
+									id="nationality"
+									name="nationality"
+									class="input nationality"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="emirate" class="label label-emirate">Emirate</label>
+								<input
+									type="text"
+									id="emirate"
+									name="emirate"
+									class="input emirate"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="mobile" class="label label-mobile"
+									>Mobile Number</label
+								>
+								<input
+									type="text"
+									id="mobile"
+									name="mobile"
+									class="input mobile"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="phone" class="label label-phone"
+									>Phone Number</label
+								>
+								<input
+									type="text"
+									id="phone"
+									name="phone"
+									class="input phone"
+								/>
+							</div>
+							<div class="input-container">
+								<label for="pobox" class="label label-pobox">P.O. Box</label>
+								<input
+									type="text"
+									id="pobox"
+									name="pobox"
+									class="input pobox"
+								/>
+							</div>
+
+							<div class="input-container">
+								<label for="education" class="label label-education"
+									>Education Level</label
+								>
+								<select name="education" id="education">
+									<optgroup>
+										<option value="none" disabled selected>
+											select education
+										</option>
+										<option value="bachelor">Bachelor's</option>
+										<option value="master">Master's</option>
+										<option value="Other">Other</option>
+									</optgroup>
+								</select>
+							</div>
+							<div class="input-container">
+								<label for="password" class="label label-password"
+									>Password</label
+								>
+								<input
+									type="text"
+									id="password"
+									name="password"
+									class="input password"
+								/>
+							</div>
+							<div class="input-container">
+								<label
+									for="confirmpassword"
+									class="label label-confirm-password"
+									>Confirm Password</label
+								>
+								<input
+									type="text"
+									id="confirmpassword"
+									name="confirmpassword"
+									class="input confirm-password"
+								/>
+							</div>
+
+							<div class="input-container">
+								<label for="contactway" class="label label-contact-way"
+									>Way of Contact</label
+								>
+								<input
+									type="text"
+									id="contactway"
+									name="contactway"
+									class="input contact-way"
+								/>
+							</div>
+							<div class="input-container radio-container">
+								<label for="ifemployee" class="label label-ifemployee"
+									>Employee</label
+								>
+								<input
+									type="radio"
+									id="ifemployee"
+									name="ifemployee"
+									class="input ifemployee"
+									value="true"
+								/>
+								<input
+									type="radio"
+									id="ifemployee"
+									name="ifemployee"
+									class="input ifemployee"
+									value="false"
+								/>
+							</div>
+							<div class="input-container">
+								<label
+									for="userphotoupload"
+									class="label label-user-photo-upload"
+									>Personal Photo (Optional)</label
+								>
+								<input
+									type="file"
+									id="userphotoupload"
+									name="userphotoupload"
+									class="input user-photo-upload"
+									placeholder="Upload"
+								/>
+							</div>
+
+							<div class="input-container">
+								<button class="btn-text">PREVIOUS</button>
+								<button type="submit" class="btn-submit">SUBMIT</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="section-right">
+				<img src="./assets/images/login.png" alt="" />
+			</section>
+		</main>
+	</body>
 </html>

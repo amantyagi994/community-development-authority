@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>select register type</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main id="app" class="app">
-        <section class="section-left">
-            <div class="logo-container">
-                <img src="./assets/images/logo.png" alt="">
-            </div>
-            <div class="form-container">
-                <div class="form-header">
-                    <h2>REGISTER</h2>
-                </div>
-                <p class="label-register-type">
-                    Please Select Registration Type 
-                </p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>select register type</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style-register-type.css" />
+	</head>
+	<body class="flex flex-vertical-center flex-horizontal-center">
+		<main id="app" class="app flex flex-vertical-center">
+			<section class="section-left flex flex-vertical-center">
+				<div class="section-left-inner-wrapper flex flex-horizontal-center">
+					<div class="logo-container">
+						<img src="./assets/images/logo.png" alt="" class="logo" />
+					</div>
+					<div class="form-container">
+						<div class="form-header">
+							<h2>REGISTER</h2>
+						</div>
+						<p class="label-register-type">Please Select Registration Type</p>
 
-                <div class="btn-register-type-container">
-                    <button class="btn-reg-type">Public <img src="./assets/images/right-arrow.png" alt="" /> </button>
-                    <button class="btn-reg-type">Volunteer <img src="./assets/images/right-arrow.png" alt="" /> </button>
-                    <button class="btn-reg-type">Company <img src="./assets/images/right-arrow.png" alt="" /> </button>
-                </div>
-            </div>
-        </section>
-        <section class="section-right">
-            <img src="./assets/images/login.png" alt="">
-        </section>
-    </main>
-</body>
+						<div
+							class="
+								btn-register-type-container
+								flex flex-horizontal-center flex-vertical-center
+							"
+						>
+							<button class="btn-reg-type flex selected" id="btn-public">
+								Public
+								<!-- <img src="./assets/images/arrow-right.svg" alt="" /> -->
+								<svg
+									width="16"
+									height="15"
+									viewBox="0 0 16 15"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 7.5H14.5M14.5 7.5L8.5 1.5M14.5 7.5L8.5 13.5"
+										stroke="black"
+										stroke-width="1"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<button class="btn-reg-type flex" id="btn-volunteer">
+								Volunteer
+								<!-- <img src="./assets/images/arrow-right.svg" alt="" /> -->
+								<svg
+									width="16"
+									height="15"
+									viewBox="0 0 16 15"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 7.5H14.5M14.5 7.5L8.5 1.5M14.5 7.5L8.5 13.5"
+										stroke="black"
+										stroke-width="1"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<button class="btn-reg-type flex" id="btn-company">
+								Company
+								<!-- <img src="./assets/images/arrow-right.svg" alt="" /> -->
+								<svg
+									width="16"
+									height="15"
+									viewBox="0 0 16 15"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.5 7.5H14.5M14.5 7.5L8.5 1.5M14.5 7.5L8.5 13.5"
+										stroke="black"
+										stroke-width="1"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-right">
+				<img src="./assets/images/login.png" alt="" />
+			</section>
+		</main>
+	</body>
 </html>
