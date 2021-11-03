@@ -6,20 +6,30 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Register</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style-register.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="">
-		<main id="app" class="app">
-			<section class="section-left">
+	<body class="flex flex-horizontal-center flex-vertical-center">
+		<main id="app" class="app flex flex-vertical-center flex-horizontal-center">
+			<section class="section-left flex flex-vertical-center">
 				<div class="section-left-inner-wrapper flex flex-horizontal-center">
 					<div class="logo-container">
-						<img src="./assets/images/logo.png" alt="" />
+						<img src="./assets/images/logo.png" alt="" class="logo" />
 					</div>
 					<div class="form-container">
 						<div class="form-header">
-							<h2>LOGIN</h2>
+							<h2>REGISTER</h2>
+							<p class="label-register">Personal Information</p>
 						</div>
-						<form action="" class="form register-form" method="POST">
-							<div class="input-container">
+						<form
+							action=""
+							class="form register-form flex flex-horizontal-center"
+							method="POST"
+						>
+							<div class="input-container flex">
 								<label for="firstname" class="label label-f-name"
 									>First Name</label
 								>
@@ -31,7 +41,7 @@
 									placeholder="Ex. Mohamed"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="lastname" class="label label-l-name"
 									>Last Name</label
 								>
@@ -43,13 +53,13 @@
 									placeholder="Ali"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="dob" class="label label-dob">DOB</label>
 								<input type="date" id="dob" name="dob" class="input dob" />
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="gender" class="label label-gender">Gender</label>
-								<select name="gender" id="gender">
+								<select name="gender" id="gender" class="input">
 									<optgroup>
 										<option value="none" disabled selected>select</option>
 										<option value="Male">Male</option>
@@ -58,7 +68,7 @@
 									</optgroup>
 								</select>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="nationality" class="label label-nationality"
 									>Nationality</label
 								>
@@ -67,18 +77,25 @@
 									id="nationality"
 									name="nationality"
 									class="input nationality"
+									placeholder="Emirati"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="emirate" class="label label-emirate">Emirate</label>
-								<input
+								<!-- <input
 									type="text"
 									id="emirate"
 									name="emirate"
 									class="input emirate"
-								/>
+								/> -->
+								<select name="emirate" id="emirate" class="input">
+									<optgroup>
+										<option value="none" disabled selected>select</option>
+										<option value="xyz">Emirate</option>
+									</optgroup>
+								</select>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="mobile" class="label label-mobile"
 									>Mobile Number</label
 								>
@@ -87,9 +104,10 @@
 									id="mobile"
 									name="mobile"
 									class="input mobile"
+									placeholder="0123456789"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="phone" class="label label-phone"
 									>Phone Number</label
 								>
@@ -98,9 +116,10 @@
 									id="phone"
 									name="phone"
 									class="input phone"
+									placeholder="0123-0123456"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="pobox" class="label label-pobox">P.O. Box</label>
 								<input
 									type="text"
@@ -110,11 +129,11 @@
 								/>
 							</div>
 
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="education" class="label label-education"
 									>Education Level</label
 								>
-								<select name="education" id="education">
+								<select name="education" id="education" class="input">
 									<optgroup>
 										<option value="none" disabled selected>
 											select education
@@ -125,7 +144,7 @@
 									</optgroup>
 								</select>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="password" class="label label-password"
 									>Password</label
 								>
@@ -136,7 +155,7 @@
 									class="input password"
 								/>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex">
 								<label
 									for="confirmpassword"
 									class="label label-confirm-password"
@@ -150,7 +169,7 @@
 								/>
 							</div>
 
-							<div class="input-container">
+							<div class="input-container flex">
 								<label for="contactway" class="label label-contact-way"
 									>Way of Contact</label
 								>
@@ -161,26 +180,32 @@
 									class="input contact-way"
 								/>
 							</div>
-							<div class="input-container radio-container">
-								<label for="ifemployee" class="label label-ifemployee"
-									>Employee</label
-								>
-								<input
-									type="radio"
-									id="ifemployee"
-									name="ifemployee"
-									class="input ifemployee"
-									value="true"
-								/>
-								<input
-									type="radio"
-									id="ifemployee"
-									name="ifemployee"
-									class="input ifemployee"
-									value="false"
-								/>
+							<div class="input-container flex">
+								<p class="label">Employee</p>
+								<div class="radio-container flex">
+									<div class="radio-wrapper flex flex-horizontal-center">
+										<input
+											type="radio"
+											id="true"
+											name="ifemployee"
+											class="input ifemployee"
+											value="true"
+										/>
+										<label for="true" class="label label-ifemployee">Yes</label>
+									</div>
+									<div class="radio-wrapper flex flex-horizontal-center">
+										<input
+											type="radio"
+											id="false"
+											name="ifemployee"
+											class="input ifemployee"
+											value="false"
+										/>
+										<label for="false" class="label label-ifemployee">No</label>
+									</div>
+								</div>
 							</div>
-							<div class="input-container">
+							<div class="input-container flex width100">
 								<label
 									for="userphotoupload"
 									class="label label-user-photo-upload"
@@ -193,17 +218,25 @@
 									class="input user-photo-upload"
 									placeholder="Upload"
 								/>
+								<div class="input custom-input flex flex-horizontal-center">
+									<p class="placeholder-text">Upload</p>
+									<img
+										src="./assets/images/upload.svg"
+										alt=""
+										class="placeholder-icon"
+									/>
+								</div>
 							</div>
 
-							<div class="input-container">
-								<button class="btn-text">PREVIOUS</button>
-								<button type="submit" class="btn-submit">SUBMIT</button>
+							<div class="input-container btn-container flex width100">
+								<button class="btn btn-text">PREVIOUS</button>
+								<button type="submit" class="btn btn-submit">SUBMIT</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			</section>
-			<section class="section-right">
+			<section class="section-right flex">
 				<img src="./assets/images/login.png" alt="" />
 			</section>
 		</main>

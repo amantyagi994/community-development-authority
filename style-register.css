@@ -1,0 +1,119 @@
+.app {
+	width: auto;
+	border-radius: 0;
+}
+
+.section-left {
+	padding: 2rem 4rem 1rem;
+}
+
+.logo-container {
+	width: 16rem;
+	margin-bottom: 3rem;
+	/* background-color: coral; */
+}
+
+.form-header h2 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.label-register {
+	font-size: 0.9rem;
+	margin: 0 0 0.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.register-form {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* background-color: chocolate; */
+}
+
+.register-form .input-container {
+	width: 46%;
+}
+
+.input {
+	color: var(--text-grey);
+}
+
+.input::placeholder {
+	color: var(--grey100);
+}
+
+.register-form .input-container .label {
+	font-size: 0.8rem;
+	color: var(--text-grey);
+	font-weight: 700;
+}
+
+.register-form .input-container .input {
+	padding: 0.75rem 1rem;
+}
+
+.register-form .input-container .radio-container {
+	flex-direction: row;
+	justify-content: space-around;
+}
+.register-form .input-container .radio-container .radio-wrapper {
+	width: 100%;
+}
+
+.register-form .input-container .radio-container .radio-wrapper input {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.register-form .input-container .radio-container .radio-wrapper .label {
+	padding-left: 1rem;
+	width: 100%;
+}
+
+.input-container.width100 {
+	width: 100%;
+	position: relative;
+}
+
+.input.user-photo-upload {
+	opacity: 0;
+	z-index: 100;
+}
+.input-container .input.custom-input {
+	position: absolute;
+	top: 1.65rem;
+	height: 2.75rem;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.input-container .input.custom-input .placeholder-icon {
+	width: 1.25rem;
+}
+
+.input-container.btn-container {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.input-container.btn-container .btn.btn-text {
+	background-color: transparent;
+	width: auto;
+	color: var(--red);
+}
+
+.input-container.btn-container .btn.btn-submit {
+	width: auto;
+}
+
+.section-right {
+	height: 100%;
+	align-self: stretch;
+	background-color: white;
+}
+
+.section-right img {
+	align-self: stretch;
+}

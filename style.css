@@ -95,7 +95,7 @@ a {
 	color: var(--text-grey);
 }
 
-.form .input-container input {
+.form .input-container .input {
 	background-color: var(--grey50);
 	padding: 0.65rem;
 	font-size: 0.8rem;
