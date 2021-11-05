@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=\, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style-services.css" />
+	</head>
+	<body>
+		<main class="app flex">
+			<section class="sidebar">
+				<div class="logo-container">
+					<img src="./assets/images/logo.png" alt="" class="logo" />
+				</div>
+				<div class="nav-menu-wrapper">
+					<div
+						class="
+							nav-menu-item
+							flex flex-horizontal-center
+							dashboard-wrapper
+							selected
+						"
+					>
+						<img
+							src="./assets/images/dashboard.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Dashboard</p>
+					</div>
+					<div
+						class="nav-menu-item flex flex-horizontal-center eservices-wrapper"
+					>
+						<img src="./assets/images/list.svg" alt="" class="nav-menu--icon" />
+						<p class="menu-item--text">E-Services</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/user-icon.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">My Application</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/debit-card.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Payment History</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/name-card.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">My card</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/settings.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Settings</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/logout.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Logout</p>
+					</div>
+				</div>
+			</section>
+			<section class="dashboard-container">
+				<div class="top-info-bar flex flex-horizontal-center">
+					<div class="privacy-switcher-container">
+						<select
+							name="privayswitcher"
+							id="privayswitcher"
+							class="input privay-switcher"
+						>
+							<option value="private">Private</option>
+							<option value="public">Public</option>
+						</select>
+					</div>
+
+					<div class="user-info flex flex-horizontal-center">
+						<div class="language-switch-container flex flex-horizontal-center">
+							<select name="language" id="language" class="language-switcher">
+								<option value="عربي">عربي</option>
+								<option value="other">other</option>
+							</select>
+							<img
+								src="./assets/images/Icon-language.png"
+								alt=""
+								class="language-icon"
+							/>
+						</div>
+
+						<div class="notification-container">
+							<div class="notification">
+								<img
+									src="./assets/images/bell.png"
+									alt=""
+									class="notification-icon"
+								/>
+								<div
+									class="
+										notification-count
+										flex flex-horizontal-center flex-vertical-center
+									"
+								>
+									2
+								</div>
+							</div>
+						</div>
+
+						<div class="user-profile-container flex flex-horizontal-center">
+							<div class="username"><span>Mohhamed</span></div>
+							<div
+								class="
+									user-profile-picture
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/user-pfp.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-heading-container flex flex-horizontal-center">
+					<div class="heading-wrapper">
+						<h2 class="heading">Dashboard</h2>
+					</div>
+					<div class="toolbox flex flex-horizontal-center">
+						<div
+							class="tool-icon flex flex-vertical-center flex-horizontal-center"
+						>
+							<img src="./assets/images/volume-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/printer-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/redo-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/duo-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div class="tool-group flex flex-horizontal-center">
+							<div
+								class="
+									tool-icon
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/zoom-in-icon.svg" alt="" />
+							</div>
+							<div
+								class="
+									tool-icon
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/zoom-out-icon.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
