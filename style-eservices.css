@@ -1,0 +1,11 @@
+.layout-switch-wrapper {
+	padding: 0 0.5rem;
+	background-color: white;
+  border-radius: 0.25rem;
+  margin-right: 1.5rem;
+}
+
+.layout-switch-wrapper .layout-switcher-tool{
+  cursor: pointer;
+  padding: 0.75rem;
+}

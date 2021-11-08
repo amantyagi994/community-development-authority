@@ -36,6 +36,11 @@ a {
 	justify-content: center;
 }
 
+.btn,
+button {
+	cursor: pointer;
+}
+
 .app {
 	min-height: 100%;
 	width: 100%;

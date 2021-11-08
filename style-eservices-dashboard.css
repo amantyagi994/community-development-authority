@@ -1,0 +1,248 @@
+.profile-details-container {
+	justify-content: space-between;
+	padding: 1.5rem 3rem 1.5rem 2rem;
+	color: white;
+	border-radius: 0.5rem;
+}
+
+.greet-with-editbtn h2 {
+	margin: 0.5rem 0;
+}
+
+.greet-with-editbtn p {
+	margin: 1rem 0;
+}
+
+.greet-with-editbtn .edit-btn-container {
+	margin: 2rem 0 0;
+}
+
+.btn {
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	color: white;
+	border-radius: 0.35rem;
+}
+
+.greet-with-editbtn .edit-btn-container .edit-profile-btn {
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: var(--lime-dark);
+	border-radius: 0.35rem;
+}
+
+.profile-progress-indication {
+	padding: 0.35rem;
+	background-color: var(--lime);
+	border-radius: 1rem;
+}
+
+.gradient-bg {
+	background: linear-gradient(90deg, #adb377 0%, #575a3c 100%);
+}
+
+.stats-cards-container {
+	justify-content: space-between;
+	margin: 1.5rem 0;
+	/* background-color: var(--text-grey); */
+}
+
+.stats-card {
+	padding: 1rem;
+	background-color: white;
+	border: 1px solid #c9c9c9;
+	border-radius: 0.5rem;
+	flex: 1;
+}
+
+.stats-card:nth-child(2) {
+	margin: 0 0.75rem 0 1.5rem;
+}
+
+.stats-card:nth-child(3) {
+	margin: 0 1.5rem 0 0.75rem;
+}
+
+.stats-card .icons-container {
+	/* background-color: cyan; */
+	justify-content: space-between;
+}
+
+.stats-card .icons-container .card-icon-main {
+	padding: 0.5rem;
+	background-color: var(--grey50);
+	height: 3.5rem;
+	width: 3.5rem;
+	border-radius: 0.5rem;
+}
+
+.stat-count {
+	margin: 1rem 0 0.5rem;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.stats-title {
+	font-size: 1.2rem;
+	color: rgb(41, 41, 41);
+}
+
+/* .stats-card .icons-container .card-icon-main img {
+	margin: auto auto;
+} */
+
+.e-services--head {
+	justify-content: space-between;
+	padding: 0 0 1rem 0;
+}
+
+.e-services--head .heading,
+.table-header .table-head-title {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.e-services--head .prev-next-switcher > div {
+	/* background-color: yellowgreen; */
+	margin: 0 0 0 1rem;
+}
+
+.e-service {
+	padding: 1rem;
+	background-color: white;
+	border-radius: 0.5rem;
+}
+
+.e-service .e-service-details {
+	padding: 0 0 0 2rem;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.e-service .e-service-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.e-service .e-service-brief {
+	line-height: 1.4;
+	font-size: 1rem;
+	padding-right: 3rem;
+}
+
+.e-service--btn-container .btn {
+	background-color: var(--blue-grey);
+	padding: 0.8rem 3.5rem;
+	font-size: 1.2rem;
+}
+
+.service-history-table-container {
+	margin: 1.5rem 0;
+}
+
+.service-history-table-container .table-header {
+	justify-content: space-between;
+}
+
+.table-head-title {
+	font-size: 1.2rem;
+}
+
+.filter-container {
+	padding: 0.5rem 1rem;
+	background-color: rgb(226, 226, 226);
+	width: 12rem;
+	justify-content: space-between;
+	border-radius: 0.35rem;
+}
+
+.filter-container .filter-text {
+	font-size: 1rem;
+	font-weight: 700;
+	/* background-color: darkorchid; */
+}
+
+/*
+.filter-container .filter-icon-wrapper {
+	background-color: darkslateblue;
+} */
+
+.table {
+	width: 100%;
+	border-radius: 0.5rem;
+	padding: 1rem 1rem 2rem;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: white;
+	margin: 1rem 0;
+}
+
+.column {
+	width: 100%;
+	flex-direction: column;
+}
+
+.column:last-child {
+	justify-content: end;
+}
+
+.column:last-child .col {
+	text-align: center;
+}
+
+.col:first-child {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.col {
+	padding: 0.75rem 1rem;
+	min-width: 80px;
+	white-space: nowrap;
+	font-size: 0.9rem;
+	margin: 0.25rem 0;
+}
+
+.column > .col:nth-child(odd) {
+	background: var(--grey50);
+}
+
+.column > .col:first-child {
+	color: var(--bg);
+	background-color: white;
+}
+
+.column.status {
+	font-weight: 700;
+}
+
+.column .service-complete {
+	color: var(--green-dark);
+}
+
+.column .service-inprogress {
+	color: var(--yellow);
+}
+
+.column .service-rejected {
+	color: var(--red);
+}
+
+.fab-container {
+	width: 100%;
+	justify-content: flex-end;
+	padding: 1rem 2rem 4rem;
+}
+
+.fab-wrapper {
+	padding: 1.5rem;
+	background-color: var(--red);
+	border-radius: 50%;
+	box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.151);
+	cursor: pointer;
+}
+
+.fab-wrapper img {
+	width: 2rem;
+}

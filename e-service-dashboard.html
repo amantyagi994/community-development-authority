@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=\, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style-services-common.css" />
+		<link rel="stylesheet" href="style-eservices-dashboard.css" />
+		<link rel="stylesheet" href="circular-progress.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main class="app flex">
+			<section class="sidebar">
+				<div class="logo-container">
+					<img src="./assets/images/logo.png" alt="" class="logo" />
+				</div>
+				<div class="nav-menu-wrapper">
+					<div
+						class="
+							nav-menu-item
+							flex flex-horizontal-center
+							dashboard-wrapper
+							selected
+						"
+					>
+						<img
+							src="./assets/images/dashboard.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Dashboard</p>
+					</div>
+					<div
+						class="nav-menu-item flex flex-horizontal-center eservices-wrapper"
+					>
+						<img src="./assets/images/list.svg" alt="" class="nav-menu--icon" />
+						<p class="menu-item--text">E-Services</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/user-icon.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">My Application</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/debit-card.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Payment History</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/name-card.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">My card</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/settings.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Settings</p>
+					</div>
+					<div class="nav-menu-item flex flex-horizontal-center">
+						<img
+							src="./assets/images/logout.svg"
+							alt=""
+							class="nav-menu--icon"
+						/>
+						<p class="menu-item--text">Logout</p>
+					</div>
+				</div>
+			</section>
+			<section class="dashboard-container">
+				<div class="top-info-bar flex flex-horizontal-center">
+					<div class="privacy-switcher-container">
+						<select
+							name="privayswitcher"
+							id="privayswitcher"
+							class="input privay-switcher"
+						>
+							<option value="private">Private</option>
+							<option value="public">Public</option>
+						</select>
+					</div>
+
+					<div class="user-info flex flex-horizontal-center">
+						<div class="language-switch-container flex flex-horizontal-center">
+							<select name="language" id="language" class="language-switcher">
+								<option value="عربي">عربي</option>
+								<option value="other">other</option>
+							</select>
+							<img
+								src="./assets/images/Icon-language.png"
+								alt=""
+								class="language-icon"
+							/>
+						</div>
+
+						<div class="notification-container">
+							<div class="notification">
+								<img
+									src="./assets/images/bell.png"
+									alt=""
+									class="notification-icon"
+								/>
+								<div
+									class="
+										notification-count
+										flex flex-horizontal-center flex-vertical-center
+									"
+								>
+									2
+								</div>
+							</div>
+						</div>
+
+						<div class="user-profile-container flex flex-horizontal-center">
+							<div class="username"><span>Muhammad</span></div>
+							<div
+								class="
+									user-profile-picture
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/user-pfp.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-heading-container flex flex-horizontal-center">
+					<div class="heading-wrapper">
+						<h2 class="heading">Dashboard</h2>
+					</div>
+					<div class="toolbox flex flex-horizontal-center">
+						<div
+							class="tool-icon flex flex-vertical-center flex-horizontal-center"
+						>
+							<img src="./assets/images/volume-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/printer-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/redo-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div
+							class="tool-icon flex flex-horizontal-center flex-vertical-center"
+						>
+							<img src="./assets/images/duo-icon.svg" alt="" />
+						</div>
+						<div class="divider"></div>
+						<div class="tool-group flex flex-horizontal-center">
+							<div
+								class="
+									tool-icon
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/zoom-in-icon.svg" alt="" />
+							</div>
+							<div
+								class="
+									tool-icon
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/zoom-out-icon.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-details-container gradient-bg flex">
+					<div class="greet-with-editbtn">
+						<h2>Welcome, Muhammad Ali</h2>
+						<p>Update your profile details</p>
+						<div class="edit-btn-container">
+							<button class="edit-profile-btn">Edit Profile</button>
+						</div>
+					</div>
+					<div class="profile-progress-indication">
+						<div class="progress-circle p76">
+							<span>76%</span>
+							<div class="left-half-clipper">
+								<div class="first50-bar"></div>
+								<div class="value-bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="stats-cards-container flex">
+					<div class="stats-card">
+						<div class="icons-container flex flex-horizontal-center">
+							<div
+								class="
+									card-icon-main
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/request.png" alt="" />
+							</div>
+							<div class="card-icon-arrow">
+								<img src="./assets/images/right-indicator.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="stat-count">04</div>
+						<div class="stats-title">My Requests</div>
+					</div>
+					<div class="stats-card">
+						<div class="icons-container flex flex-horizontal-center">
+							<div
+								class="
+									card-icon-main
+									flex flex-vertical-center flex-horizontal-center
+								"
+							>
+								<img src="./assets/images/closed.png" alt="" />
+							</div>
+							<div class="card-icon-arrow">
+								<img src="./assets/images/right-indicator.svg" alt="" />
+							</div>
+						</div>
+						<div class="stat-count">12</div>
+						<div class="stats-title">Closed Requests</div>
+					</div>
+					<div class="stats-card">
+						<div class="icons-container flex flex-horizontal-center">
+							<div
+								class="
+									card-icon-main
+									flex flex-vertical-center flex-horizontal-center
+								"
+							>
+								<img src="./assets/images/draft.png" alt="" />
+							</div>
+							<div class="card-icon-arrow">
+								<img src="./assets/images/right-indicator.svg" alt="" />
+							</div>
+						</div>
+						<div class="stat-count">02</div>
+						<div class="stats-title">Drafts</div>
+					</div>
+					<div class="stats-card">
+						<div class="icons-container flex flex-horizontal-center">
+							<div
+								class="
+									card-icon-main
+									flex flex-horizontal-center flex-vertical-center
+								"
+							>
+								<img src="./assets/images/new.png" alt="" />
+							</div>
+							<div class="card-icon-arrow">
+								<img src="./assets/images/right-indicator.svg" alt="" />
+							</div>
+						</div>
+						<div class="stat-count">05</div>
+						<div class="stats-title">New Repetitions</div>
+					</div>
+				</div>
+
+				<div class="e-services-container">
+					<div class="e-services--head flex flex-horizontal-center">
+						<div class="heading">eServices</div>
+						<div class="prev-next-switcher flex flex-horizontal-center">
+							<div class="prev">
+								<img src="./assets/images/left-arrow.png" alt="" />
+							</div>
+							<div class="next">
+								<img src="./assets/images/right-arrow.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="e-service flex">
+						<div class="image-wrapper">
+							<img src="./assets/images/eservice.png" alt="" />
+						</div>
+						<div class="e-service-details flex">
+							<div class="e-service-title">New Supplier Registration</div>
+							<div class="e-service-brief">
+								The new supplier registration process uses a registration
+								project with questionnaires to gather detailed profile
+								information about a supplier.
+							</div>
+							<div class="e-service--btn-container">
+								<button class="btn">View</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="service-history-table-container">
+						<div class="table-header flex flex-horizontal-center">
+							<div class="table-head-title">Recent Applications</div>
+							<div class="filter-container flex flex-horizontal-center">
+								<p class="filter-text">Filter</p>
+								<div class="filter-icon-wrapper flex">
+									<img
+										src="./assets/images/filter.png"
+										alt=""
+										class="filter-wrapper"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="table flex">
+							<div class="column flex">
+								<div class="col">S.NO</div>
+								<div class="col">01</div>
+								<div class="col">02</div>
+								<div class="col">03</div>
+								<div class="col">04</div>
+							</div>
+
+							<div class="column flex">
+								<div class="col">INVOICE</div>
+								<div class="col">003452</div>
+								<div class="col">003453</div>
+								<div class="col">003454</div>
+								<div class="col">003455</div>
+							</div>
+							<div class="column flex">
+								<div class="col">SERVICE NAME</div>
+								<div class="col">Event Permit</div>
+								<div class="col">New Supplier Registration</div>
+								<div class="col">Elderly</div>
+								<div class="col">Sanad Card</div>
+							</div>
+							<div class="column flex">
+								<div class="col">DATE</div>
+								<div class="col">22-05-2021</div>
+								<div class="col">26-05-2021</div>
+								<div class="col">12-04-2021</div>
+								<div class="col">02-03-2021</div>
+							</div>
+
+							<div class="column flex">
+								<div class="col">TIME</div>
+								<div class="col">10:30</div>
+								<div class="col">12:20</div>
+								<div class="col">05:30</div>
+								<div class="col">09:20</div>
+							</div>
+							<div class="column flex">
+								<div class="col">TOTAL AMOUNT</div>
+								<div class="col">AED 5080</div>
+								<div class="col">AED 1250</div>
+								<div class="col">AED 2500</div>
+								<div class="col">AED 950</div>
+							</div>
+							<div class="column flex status">
+								<div class="col">STATUS</div>
+								<div class="col service-complete">Completed</div>
+								<div class="col service-inprogress">In Progress</div>
+								<div class="col service-rejected">Rejected</div>
+								<div class="col service-complete">Completed</div>
+							</div>
+							<div class="column flex">
+								<div class="col"></div>
+								<div class="col">
+									<img src="./assets/images/3-dots.svg" alt="" />
+								</div>
+								<div class="col">
+									<img src="./assets/images/3-dots.svg" alt="" />
+								</div>
+								<div class="col">
+									<img src="./assets/images/3-dots.svg" alt="" />
+								</div>
+								<div class="col">
+									<img src="./assets/images/3-dots.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="fab-container flex">
+						<div class="fab-wrapper flex">
+							<img src="./assets/images/message.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
