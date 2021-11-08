@@ -72,6 +72,7 @@ button {
 	border-radius: 0.25rem;
 	margin: 0.5rem 0;
 	color: var(--text-grey);
+	cursor: pointer;
 }
 
 .nav-menu-item.selected {
@@ -89,6 +90,21 @@ button {
 .nav-menu-item.selected .menu-item--text {
 	font-weight: 700;
 	color: var(--red);
+}
+
+.nav-menu-item:hover img {
+	filter: invert(120%);
+}
+
+.nav-menu-item:hover,
+.nav-menu-item.hover {
+	background-color: var(--red);
+	color: white;
+}
+
+.nav-menu-item:hover .menu-item--text,
+.nav-menu-item.hover .menu-item--text {
+	color: white;
 }
 
 .dashboard-container {

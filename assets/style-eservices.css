@@ -1,0 +1,56 @@
+.layout-switch-wrapper {
+	padding: 0 0.5rem;
+	background-color: white;
+	border-radius: 0.25rem;
+	margin-right: 1.5rem;
+}
+
+.layout-switch-wrapper .layout-switcher-tool {
+	cursor: pointer;
+	padding: 0.75rem;
+}
+
+.eservice-card {
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background-color: white;
+	height: 4.5rem;
+	margin: 0 0 1.5rem;
+	overflow: hidden;
+}
+
+.eservice-card-head {
+	cursor: pointer;
+	justify-content: space-between;
+	padding: 0 1rem 0.5rem 0;
+}
+
+.eservice-card-head .e-service-title {
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.eservice-card.carousel-active {
+	height: fit-content;
+}
+
+.eservice-card-main {
+	padding: 1.5rem 0 0;
+}
+
+.eservice-card-main .btn {
+	padding: 0.75rem 2rem;
+	border-radius: 0.35rem;
+	background-color: var(--grey50);
+	color: var(--lime);
+	font-weight: 500;
+}
+
+.eservice-card-main .btn.active {
+	background-color: var(--lime);
+	color: white;
+}
+
+.eservice-card-main .btn:nth-child(2) {
+	margin: 0 2rem;
+}
